@@ -1,0 +1,46 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Environment variables (Crucial for API keys and DB URI)
+.env
+.env.test
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for instrumented libs (Testing)
+lib-cov
+coverage
+.nyc_output
+
+# Compiled binary addons
+build/Release
+
+# Optional REPL history
+.node_repl_history
+
+# Process Manager files (PM2, etc.)
+.pm2/
+out.log
+err.log
+
+# Database (if using local SQLite or similar)
+*.db
+*.sqlite
+
+# IDE / Editor folders
+.vscode/
+.idea/
+.DS_Store
