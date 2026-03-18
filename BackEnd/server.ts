@@ -1,6 +1,5 @@
 import dotenv from "dotenv";
 dotenv.config(); // ← immediately after dotenv import, before everything else
-  console.log("API KEY:", process.env.COHERE_API_KEY); // ← add this line to check if the API key is loaded
 import express from "express";
 import cors from "cors";
 import router from "./routes/converter";
