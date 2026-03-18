@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Hello");
 });
 
-const port = 3003;
+const port = process.env.PORT || 3003;
 app.listen(port, () => {
   console.log("Server is running");
 });
