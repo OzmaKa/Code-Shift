@@ -15,17 +15,17 @@ export const translateCode = async (
       model: "command-r-plus-08-2024",
       messages: [
         {
-          role: "system",
-          content: "you are a code coversion engine
-                        your only job is to convert code from one programming language to another
-                        Rules: 
-                        - Return only the converted code
+  role: "system",
+  content: `You are a code conversion engine.
+Your only job is to convert code from one programming language to another.
+Rules:
+- Return only the converted code
 - No explanations
-- No markdown formatting  
+- No markdown formatting
 - No code blocks or backticks
 - Preserve exact logic and behavior
-- If the input is not valid code, return: ERROR: Invalid code input",
-        },
+- If the input is not valid code, return: ERROR: Invalid code input`,
+},
 
         {
           role: "user",
