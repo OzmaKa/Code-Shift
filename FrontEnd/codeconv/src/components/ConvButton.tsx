@@ -6,23 +6,23 @@ interface ConvBProps {
   from: string;
   to: string;
   code: string;
-  onResult: (result: string) => void;
+  onChunk: (chunk: string) => void;
+  onStart: () => void;
 }
 
-export const ConvB: React.FC<ConvBProps> = ({ from, to, code, onResult }) => {
+export const ConvB: React.FC<ConvBProps> = ({ from, to, code, onChunk, onStart }) => {
   const [loading, setLoading] = useState(false); 
   const [error, setError] = useState<string | null>(null);
   
   const handleClick = async () => {
     setLoading(true);
     setError(null);
+    onStart();
     try{
-      const result = await codefetch(from, to, code);
-    onResult(result);
+      await codefetch(from, to, code, onChunk);
     }
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    catch(error){
-      setError("Failed to convert code.");
+    catch{
+      setError("Failed to convert code. Please try again.");
     }
     finally{
       setLoading(false);

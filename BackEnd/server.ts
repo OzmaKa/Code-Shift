@@ -1,12 +1,19 @@
 import dotenv from "dotenv";
-dotenv.config(); // ← immediately after dotenv import, before everything else
+dotenv.config();
+
 import express from "express";
 import cors from "cors";
 import router from "./routes/converter";
+
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:3000",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
+
 app.use("/convert", router);
 
 app.get("/", (req, res) => {
