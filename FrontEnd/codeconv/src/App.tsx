@@ -1,8 +1,11 @@
+// frontend/src/App.tsx
+
 import { useState } from "react";
 import { Cinout } from "./components/Codeiinout";
 import { ConvB } from "./components/ConvButton";
 import { Header } from "./components/Header";
 import { Lang } from "./components/LangSelector";
+import { ReviewPanel } from "./components/ReviewPanel";
 
 function App() {
   const [from, setFrom] = useState("JavaScript");
@@ -11,11 +14,11 @@ function App() {
   const [result, setResult] = useState("");
 
   const handleChunk = (chunk: string) => {
-    setResult(prev => prev + chunk); // append each chunk
+    setResult(prev => prev + chunk);
   };
 
   const handleStart = () => {
-    setResult(""); // clear output when new conversion starts
+    setResult("");
   };
 
   return (
@@ -31,6 +34,8 @@ function App() {
           onChunk={handleChunk}
           onStart={handleStart}
         />
+        {/* Review feature — uses 'from' language since that's the input code */}
+        <ReviewPanel code={code} language={from} />
       </div>
     </>
   );

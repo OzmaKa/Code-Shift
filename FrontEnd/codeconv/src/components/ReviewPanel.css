@@ -1,0 +1,165 @@
+/* frontend/src/components/ReviewPanel.css */
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.review-btn {
+  background: transparent;
+  border: 1px solid #1e2230;
+  color: #5a6380;
+  font-family: 'Syne', 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.review-btn:hover:not(:disabled) {
+  border-color: #4ade80;
+  color: #4ade80;
+}
+
+.review-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.review-error {
+  font-size: 12px;
+  color: #f87171;
+  letter-spacing: 0.5px;
+}
+
+/* Panel */
+.review-panel {
+  width: 100%;
+  max-width: 860px;
+  background: #181c27;
+  border: 1px solid #1e2230;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Score row */
+.review-score-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #1e2230;
+}
+
+.review-score-label {
+  font-size: 10px;
+  color: #5a6380;
+  letter-spacing: 1.5px;
+  flex-shrink: 0;
+}
+
+.review-score-track {
+  flex: 1;
+  height: 4px;
+  background: #1e2230;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.review-score-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.review-score-num {
+  font-size: 13px;
+  color: #d4d8e8;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.review-badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.badge-approved {
+  background: rgba(74, 222, 128, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.badge-rejected {
+  background: rgba(248, 113, 113, 0.1);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+/* Blocks */
+.review-block {
+  padding: 16px 20px;
+  border-bottom: 1px solid #1e2230;
+}
+
+.review-block:last-child {
+  border-bottom: none;
+}
+
+.review-block-title {
+  font-size: 10px;
+  color: #5a6380;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.review-issues {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.review-issues li {
+  font-size: 13px;
+  color: #8892aa;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.review-issues li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #f87171;
+}
+
+.review-none {
+  font-size: 13px;
+  color: #4ade80;
+  margin: 0;
+}
+
+.review-suggestion {
+  font-size: 13px;
+  color: #8892aa;
+  line-height: 1.7;
+  margin: 0;
+}

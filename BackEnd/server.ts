@@ -4,6 +4,7 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import router from "./routes/converter";
+import reviewerRouter from "./routes/reviewer"; // Import the reviewer routes
 
 const app = express();
 
@@ -14,7 +15,9 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
+
 app.use("/convert", router);
+app.use("/review", reviewerRouter); // Add this line to use the reviewer routes
 
 app.get("/", (req, res) => {
   res.send("Hello");

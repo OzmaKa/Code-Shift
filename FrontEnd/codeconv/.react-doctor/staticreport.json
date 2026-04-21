@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-03-28T08:19:00.852Z",
+  "componentCount": 8,
+  "issues": [
+    {
+      "id": "inline-function-src_components_LangSelector_tsx-18",
+      "component": "Lang",
+      "file": "src\\components\\LangSelector.tsx",
+      "line": 18,
+      "column": 27,
+      "severity": "info",
+      "message": "Inline ArrowFunctionExpression in prop \"onChange\"",
+      "suggestion": "Use useCallback or define function outside component to prevent re-renders"
+    },
+    {
+      "id": "inline-function-src_components_LangSelector_tsx-31",
+      "component": "Lang",
+      "file": "src\\components\\LangSelector.tsx",
+      "line": 31,
+      "column": 25,
+      "severity": "info",
+      "message": "Inline ArrowFunctionExpression in prop \"onChange\"",
+      "suggestion": "Use useCallback or define function outside component to prevent re-renders"
+    },
+    {
+      "id": "dead-code-src_components_LangSelector_tsx-1",
+      "component": "Global/Module",
+      "file": "src\\components\\LangSelector.tsx",
+      "line": 1,
+      "column": 7,
+      "severity": "warning",
+      "message": "Unused Import found: \"React\"",
+      "suggestion": "Remove the unused import to clean up the code and reduce bundle size."
+    },
+    {
+      "id": "prop-drilling-src_components_LangSelector_tsx-18",
+      "component": "UnknownComponent",
+      "file": "src\\components\\LangSelector.tsx",
+      "line": 18,
+      "severity": "info",
+      "message": "Potential Prop Drilling: The prop \"e\" is passed through this component without being used locally.",
+      "suggestion": "Consider using React Context or a State Management library (Redux/Zustand) to avoid deep prop drilling."
+    },
+    {
+      "id": "prop-drilling-src_components_LangSelector_tsx-31",
+      "component": "UnknownComponent",
+      "file": "src\\components\\LangSelector.tsx",
+      "line": 31,
+      "severity": "info",
+      "message": "Potential Prop Drilling: The prop \"e\" is passed through this component without being used locally.",
+      "suggestion": "Consider using React Context or a State Management library (Redux/Zustand) to avoid deep prop drilling."
+    },
+    {
+      "id": "dead-code-src_components_Header_tsx-1",
+      "component": "Global/Module",
+      "file": "src\\components\\Header.tsx",
+      "line": 1,
+      "column": 7,
+      "severity": "warning",
+      "message": "Unused Import found: \"React\"",
+      "suggestion": "Remove the unused import to clean up the code and reduce bundle size."
+    },
+    {
+      "id": "dead-code-src_components_ConvButton_tsx-1",
+      "component": "Global/Module",
+      "file": "src\\components\\ConvButton.tsx",
+      "line": 1,
+      "column": 7,
+      "severity": "warning",
+      "message": "Unused Import found: \"React\"",
+      "suggestion": "Remove the unused import to clean up the code and reduce bundle size."
+    },
+    {
+      "id": "inline-function-src_components_Codeiinout_tsx-16",
+      "component": "Cinout",
+      "file": "src\\components\\Codeiinout.tsx",
+      "line": 16,
+      "column": 8,
+      "severity": "info",
+      "message": "Inline ArrowFunctionExpression in prop \"onChange\"",
+      "suggestion": "Use useCallback or define function outside component to prevent re-renders"
+    },
+    {
+      "id": "dead-code-src_components_Codeiinout_tsx-1",
+      "component": "Global/Module",
+      "file": "src\\components\\Codeiinout.tsx",
+      "line": 1,
+      "column": 7,
+      "severity": "warning",
+      "message": "Unused Import found: \"React\"",
+      "suggestion": "Remove the unused import to clean up the code and reduce bundle size."
+    },
+    {
+      "id": "prop-drilling-src_components_Codeiinout_tsx-10",
+      "component": "UnknownComponent",
+      "file": "src\\components\\Codeiinout.tsx",
+      "line": 10,
+      "severity": "info",
+      "message": "Potential Prop Drilling: The prop \"code\" is passed through this component without being used locally.",
+      "suggestion": "Consider using React Context or a State Management library (Redux/Zustand) to avoid deep prop drilling."
+    },
+    {
+      "id": "prop-drilling-src_components_Codeiinout_tsx-10",
+      "component": "UnknownComponent",
+      "file": "src\\components\\Codeiinout.tsx",
+      "line": 10,
+      "severity": "info",
+      "message": "Potential Prop Drilling: The prop \"setCode\" is passed through this component without being used locally.",
+      "suggestion": "Consider using React Context or a State Management library (Redux/Zustand) to avoid deep prop drilling."
+    },
+    {
+      "id": "prop-drilling-src_components_Codeiinout_tsx-10",
+      "component": "UnknownComponent",
+      "file": "src\\components\\Codeiinout.tsx",
+      "line": 10,
+      "severity": "info",
+      "message": "Potential Prop Drilling: The prop \"result\" is passed through this component without being used locally.",
+      "suggestion": "Consider using React Context or a State Management library (Redux/Zustand) to avoid deep prop drilling."
+    },
+    {
+      "id": "prop-drilling-src_components_Codeiinout_tsx-16",
+      "component": "UnknownComponent",
+      "file": "src\\components\\Codeiinout.tsx",
+      "line": 16,
+      "severity": "info",
+      "message": "Potential Prop Drilling: The prop \"e\" is passed through this component without being used locally.",
+      "suggestion": "Consider using React Context or a State Management library (Redux/Zustand) to avoid deep prop drilling."
+    },
+    {
+      "id": "dead-code-src_components_About_tsx-1",
+      "component": "Global/Module",
+      "file": "src\\components\\About.tsx",
+      "line": 1,
+      "column": 7,
+      "severity": "warning",
+      "message": "Unused Import found: \"React\"",
+      "suggestion": "Remove the unused import to clean up the code and reduce bundle size."
+    }
+  ],
+  "filesAnalyzed": 8,
+  "filesFailed": 0,
+  "grade": "B"
+}
